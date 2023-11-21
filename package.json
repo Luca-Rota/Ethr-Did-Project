@@ -1,0 +1,39 @@
+{
+  "name": "ethr-did-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node example.js",
+    "build": "npx tsc && node dist/example.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "20.8.2",
+    "gts": "^5.2.0",
+    "typescript": "~5.2.0"
+  },
+  "dependencies": {
+    "@metamask/providers": "^14.0.1",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "did-resolver": "^4.1.0",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.7.1",
+    "ethjs-provider-http": "^0.1.6",
+    "ethr-did": "^3.0.4",
+    "ethr-did-registry": "^1.2.0",
+    "ethr-did-resolver": "^10.0.0",
+    "web3": "^4.2.2",
+    "web3-provider": "^1.0.0"
+  }
+}
